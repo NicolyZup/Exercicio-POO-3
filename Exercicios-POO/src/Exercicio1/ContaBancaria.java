@@ -59,4 +59,7 @@ public abstract class ContaBancaria {
         System.out.println("Saldo disponível: "+getSaldo());
         System.out.println("==================================");
     }
+
+    public void calcularSaldo() {
+    }
 }

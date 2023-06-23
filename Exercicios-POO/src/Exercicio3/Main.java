@@ -1,16 +1,16 @@
 package Exercicio3;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
-        Dicionario objeto1 = new Dicionario("bola","azul");
-        Dicionario objeto2 = new Dicionario("boneca","amarela");
-        Dicionario objeto3 = new Dicionario("dado","rosa");
+       Dicionario dicionario = new Dicionario();
 
-        for(String chave : objeto3.getChave()){
-            for (String valor : objeto3.getValor()){
-                System.out.println(chave +"->"+valor);
-            }
-        }
+       dicionario.adicionarChaveValor("Bola", List.of("azul"));
+       dicionario.adicionarChaveValor("Boneca", List.of("amarela"));
+       dicionario.adicionarChaveValor("Dado", List.of("rosa"));
+
+       dicionario.mostrarDados();
     }
 }

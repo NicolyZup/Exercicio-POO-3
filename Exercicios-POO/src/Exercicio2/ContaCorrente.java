@@ -8,6 +8,6 @@ public class ContaCorrente implements Tributos{
     }
     @Override
     public double calcularTributos() {
-        return 1/100 * conta;
+        return conta * 0.01;
     }
 }

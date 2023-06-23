@@ -1,31 +1,24 @@
 package Exercicio3;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Dicionario {
-    private List<String> chave;
-    private List<String> valor;
+    private Map<String, List<String>> dicionario;
 
-    public Dicionario(String chave, String valor) {
-        this.chave.add(chave);
-        this.valor.add(valor);
+    public Dicionario() {
+        dicionario = new HashMap<>();
     }
 
-    public List<String> getChave() {
-        return chave;
+    public void adicionarChaveValor(String chave, List<String> valor){
+        dicionario.put(chave,valor);
     }
 
-    public void setChave(List<String> chave) {
-        this.chave = chave;
+    public void mostrarDados(){
+        for( String chave : dicionario.keySet()){
+            List<String> valor = dicionario.get(chave);
+            System.out.println(chave+" -> "+valor);
+        }
     }
-
-    public List<String> getValor() {
-        return valor;
-    }
-
-    public void setValor(List<String> valor) {
-        this.valor = valor;
-    }
-
-
 }

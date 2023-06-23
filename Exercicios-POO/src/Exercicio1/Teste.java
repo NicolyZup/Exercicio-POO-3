@@ -11,7 +11,7 @@ public class Teste {
         cliente1.mostrarInformacoes();
         cliente1.depositar(250);
         cliente1.mostrarInformacoes();
-        /*cliente1.calcularSaldo();*/
+        cliente1.calcularSaldo();
         cliente1.mostrarInformacoes();
 
         cliente2.sacar(3303);
